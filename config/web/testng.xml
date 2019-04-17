@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web Regression Suite" parallel="true" thread-count="1">
+	<listeners>
+		<listener class-name="com.common.listners.TestNgListners" />
+		<listener class-name="com.common.listners.AnnotationTransformer" />
+	</listeners>
+	<test name="BDD Test Suite" enabled="true">
+		<classes>
+			<class name="com.backend.executor.TestRunner"></class>
+		</classes>
+	</test>
+	<test name="Java Test Suite" enabled="false">
+		<classes>
+			<class name="com.tests.BasicExecution"></class>
+		</classes>
+	</test>
+</suite>
