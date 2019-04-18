@@ -48,12 +48,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Web_Regression_Suite">
-                    <span>E:\Workspace2019\William Sonama Demo\config\web\testng.xml</span>
+                    <span>E:\Demo\William Sonama Demo\config\web\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Web_Regression_Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -135,7 +135,7 @@
         </div> <!-- panel Web_Regression_Suite -->
         <div panel-name="test-xml-Web_Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\Workspace2019\William Sonama Demo\config\web\testng.xml</span>
+            <span class="header-content">E:\Demo\William Sonama Demo\config\web\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -151,6 +151,11 @@
       &lt;class name=&quot;com.backend.executor.TestRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BDD Test Suite --&gt;
+  &lt;test name=&quot;Java Test Suite&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tests.BasicExecution&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Java Test Suite --&gt;
 &lt;/suite&gt; &lt;!-- Web Regression Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -163,6 +168,9 @@
             <ul>
               <li>
                 <span class="test-name">BDD Test Suite (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Java Test Suite (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,12 +200,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'startExecution')
 data.setCell(0, 2, 'com.backend.executor.TestRunner')
-data.setCell(0, 3, 60860);
+data.setCell(0, 3, 167416);
 window.suiteTableData['Web_Regression_Suite']= { tableData: data, tableDiv: 'times-div-Web_Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Web_Regression_Suite">
               </div> <!-- times-div-Web_Regression_Suite -->
             </div> <!-- times-div -->
@@ -228,9 +236,21 @@ return data;
                 <span class="method-name">startExecution(www.williams-sonoma.com basic flow)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tests.BasicExecution</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">BasicFlow</span>
+                <span class="method-start">171487 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.backend.executor.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64815 ms</span>
+                <span class="method-start">171788 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

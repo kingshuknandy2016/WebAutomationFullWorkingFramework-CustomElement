@@ -4,7 +4,7 @@
 		<listener class-name="com.common.listners.TestNgListners" />
 		<listener class-name="com.common.listners.AnnotationTransformer" />
 	</listeners>
-	<test name="BDD Test Suite" enabled="false">
+	<test name="BDD Test Suite" enabled="true">
 		<classes>
 			<class name="com.backend.executor.TestRunner"></class>
 		</classes>

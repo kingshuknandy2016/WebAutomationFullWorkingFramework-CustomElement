@@ -5,7 +5,7 @@ import com.steps.BasicSteps;
 
 public class BasicExecution {
 	@Test(description = "A basic End to End Flow")
-	public void Suite1() {
+	public void BasicFlow() {
 		BasicSteps.launch_Application_And_Navigate_To_SignInPage();;
 		BasicSteps.enter_Username_Password_And_SignIn("kingshuknandy1990@gmail.com", "9007438097kingshuk");
 		BasicSteps.select_TeaKettle_From_Cookware();

@@ -60,7 +60,7 @@ public class WebDriverManager {
 	public static WebDriver getDriver() {
 		if (driver == null) {
 			driver = initializeDriver();
-			System.out.println("Driver Initialization==============");
+			System.out.println("=========Driver Initialization successfully Done==============");
 		}
 		return driver;
 	}
@@ -100,6 +100,7 @@ public class WebDriverManager {
 	public static void closeDriver() {
 		driver.close();
 		driver.quit();
+		driver=null;
 	}
 
 	public static void pause(long millisecs) {
