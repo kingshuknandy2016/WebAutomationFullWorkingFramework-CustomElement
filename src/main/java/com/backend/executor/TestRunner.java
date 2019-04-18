@@ -36,6 +36,8 @@ private TestNGCucumberRunner testRunner = new TestNGCucumberRunner(TestRunner.cl
 	@Test(dataProvider = "features")
 	public void startExecution(CucumberFeatureWrapper cFeature) {
 		testRunner.runCucumber(cFeature.getCucumberFeature());
+//		String featureName=cFeature.getCucumberFeature().getGherkinFeature().;
+//		System.out.println("Feature Name:"+featureName);
 	}
 	
 	@AfterSuite
