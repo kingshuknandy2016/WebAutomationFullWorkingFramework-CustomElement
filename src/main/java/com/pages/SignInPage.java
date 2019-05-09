@@ -1,33 +1,30 @@
 package com.pages;
 
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
+import com.backend.elements.CusWebElement;
 import com.backend.executor.TestBasePage;
-import com.backend.executor.WebDriverManager;
 import com.backend.utils.ActionName;
 import com.backend.utils.CommonUtils;
 
 public class SignInPage extends TestBasePage {
 	@FindBy(id = "login-email")
-	private WebElement email;
+	private CusWebElement email;
 
 	@FindBy(id = "login-password")
-	private WebElement password;
+	private CusWebElement password;
 	
 	@FindBy(xpath="(//button[@id='btn-sign-in'])[2]")
-	private WebElement signInBtn;
+	private CusWebElement signInBtn;
 
-	public WebElement getSignInBtn() {
+	public CusWebElement getSignInBtn() {
 		return signInBtn;
 	}
 
-	public WebElement getEmail() {
+	public CusWebElement getEmail() {
 		return email;
 	}
 
-	public WebElement getPassword() {
+	public CusWebElement getPassword() {
 		return password;
 	}
 	public void enterUsernamePassword(String username, String password) {

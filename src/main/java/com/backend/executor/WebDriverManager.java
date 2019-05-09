@@ -12,7 +12,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import com.backend.reports.Reporter;
 import com.backend.utils.ConfigurationManager;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class WebDriverManager {
 	private static WebDriver driver = null;
@@ -51,7 +53,7 @@ public class WebDriverManager {
 				break;
 			}
 		} catch (Exception e) {
-			// TODO: handle exception
+			Reporter.logChildStatus(LogStatus.FAIL, "Exception occured while initializing driver. Exception:"+e.getLocalizedMessage());
 		}
 		
 		return driver;

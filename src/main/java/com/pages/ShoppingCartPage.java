@@ -3,6 +3,7 @@ package com.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.backend.elements.CusWebElement;
 import com.backend.executor.TestBasePage;
 import com.backend.reports.Reporter;
 import com.backend.utils.ActionName;
@@ -16,23 +17,23 @@ public class ShoppingCartPage extends TestBasePage {
 	}
 	
 	@FindBy(xpath="//a[contains(text(),'Save For Later')]")
-	private WebElement saveForLater;
+	private CusWebElement saveForLater;
 	
 	@FindBy(xpath="")
-	private WebElement remove ;
+	private CusWebElement remove ;
 	
 	@FindBy(xpath="//div[@id='empty-cart']//p[@class='save-for-later-message']")
-	private WebElement itemSavedMsg ;
+	private CusWebElement itemSavedMsg ;
 
-	public WebElement getItemSavedMsg() {
+	public CusWebElement getItemSavedMsg() {
 		return itemSavedMsg;
 	}
 
-	public WebElement getSaveForLater() {
+	public CusWebElement getSaveForLater() {
 		return saveForLater;
 	}
 
-	public WebElement getRemove() {
+	public CusWebElement getRemove() {
 		return remove;
 	}
 	

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Web Regression Suite]" parallel="true">
-  <listeners>
-    <listener class-name="com.common.listners.TestNgListners"/>
-  </listeners>
-  <test name="Java Test Suite(failed)" parallel="true" preserve-order="true">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="com.common.tests.BasicExecution">
+      <class name="tests.TestClass">
         <methods>
-          <include name="Suite1"/>
+          <include name="tests"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.common.tests.BasicExecution -->
+      </class> <!-- tests.TestClass -->
     </classes>
-  </test> <!-- Java Test Suite(failed) -->
-</suite> <!-- Failed suite [Web Regression Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

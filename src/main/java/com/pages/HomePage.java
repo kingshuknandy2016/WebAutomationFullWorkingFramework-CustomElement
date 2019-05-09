@@ -3,6 +3,7 @@ package com.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.backend.elements.CusWebElement;
 import com.backend.executor.TestBasePage;
 import com.backend.utils.ActionName;
 import com.backend.utils.CommonUtils;
@@ -14,16 +15,16 @@ public class HomePage extends TestBasePage {
 	}
 
 	@FindBy(xpath = "//a[@class='user-account-link']")
-	private WebElement myAccount;
+	private CusWebElement myAccount;
 
 	@FindBy(xpath = "//a[contains(text(),'Sign In')]")
-	private WebElement signIn;
+	private CusWebElement signIn;
 
-	public WebElement getMyAccount() {
+	public CusWebElement getMyAccount() {
 		return myAccount;
 	}
 
-	public WebElement getSignIn() {
+	public CusWebElement getSignIn() {
 		return signIn;
 	}
 

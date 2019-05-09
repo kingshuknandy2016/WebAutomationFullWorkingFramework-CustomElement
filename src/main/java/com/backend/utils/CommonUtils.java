@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.backend.elements.CusWebElement;
 import com.backend.executor.WebDriverManager;
 import com.backend.reports.Reporter;
 import com.relevantcodes.extentreports.LogStatus;
@@ -20,7 +21,7 @@ public class CommonUtils extends WebDriverManager {
 		element = wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	public static Object performAction(WebElement element, ActionName name, Object value){
+	public static Object performAction(CusWebElement element, ActionName name, Object value){
 		try {
 		Actions actionbuilder = new Actions(getDriver());
 		if (isPresent(getDriver().findElements(By.xpath("//a[@title='Minimize']")))) {
@@ -33,7 +34,8 @@ public class CommonUtils extends WebDriverManager {
 			Thread.sleep(3000);
 		}
 		WebDriverWait wait = new WebDriverWait(getDriver(), 10);
-		element = wait.until(ExpectedConditions.visibilityOf(element));
+		WebElement test=element;
+		test =  wait.until(ExpectedConditions.visibilityOf(test));
 		
 			switch (name) {
 			case CLICK:
@@ -78,15 +80,15 @@ public class CommonUtils extends WebDriverManager {
 		System.out.println("=====================================");
 	}
 
-	public static boolean isPresent(List<WebElement> elementList) {
+	public static boolean isPresent(List<CusWebElement> elementList) {
 		if (elementList.size() == 0) {
 			return false;
 		} else
 			return true;
 	}
 	
-	public static WebElement getElement(String locator,String value){
-		return getDriver().findElement(By.xpath(String.format(locator, value)));
+	public static CusWebElement getElement(String locator,String value){
+		return (CusWebElement)getDriver().findElement(By.xpath(String.format(locator, value)));
 	}
 	
 	public static String getStepName() {

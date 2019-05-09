@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Web_Regression_Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,7 +101,7 @@
                     <div class="method-list-content passed suite-Web_Regression_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Regression_Suite" title="com.backend.executor.TestRunner" hash-for-method="startExecution(www.williams-sonoma.com basic flow)">startExecution(www.williams-sonoma.com basic flow)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Web_Regression_Suite" title="com.tests.BasicExecution" hash-for-method="BasicFlow">BasicFlow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Web_Regression_Suite -->
@@ -119,15 +119,14 @@
           <div class="suite-Web_Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.backend.executor.TestRunner</span>
+              <span class="class-name">com.tests.BasicExecution</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="startExecution(www.williams-sonoma.com basic flow)">
-                  </a> <!-- startExecution(www.williams-sonoma.com basic flow) -->
-                  <span class="method-name">startExecution</span>
-                  <span class="parameters">(www.williams-sonoma.com basic flow)</span>
+                  <a name="BasicFlow">
+                  </a> <!-- BasicFlow -->
+                  <span class="method-name">BasicFlow</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,11 +145,6 @@
     &lt;listener class-name=&quot;com.common.listners.TestNgListners&quot;/&gt;
     &lt;listener class-name=&quot;com.common.listners.AnnotationTransformer&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;BDD Test Suite&quot; preserve-order=&quot;true&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.backend.executor.TestRunner&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- BDD Test Suite --&gt;
   &lt;test name=&quot;Java Test Suite&quot; preserve-order=&quot;true&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.tests.BasicExecution&quot;/&gt;
@@ -166,9 +160,6 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
-              <li>
-                <span class="test-name">BDD Test Suite (1 class)</span>
-              </li>
               <li>
                 <span class="test-name">Java Test Suite (1 class)</span>
               </li>
@@ -198,14 +189,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'startExecution')
-data.setCell(0, 2, 'com.backend.executor.TestRunner')
-data.setCell(0, 3, 167416);
+data.setCell(0, 1, 'BasicFlow')
+data.setCell(0, 2, 'com.tests.BasicExecution')
+data.setCell(0, 3, 102190);
 window.suiteTableData['Web_Regression_Suite']= { tableData: data, tableDiv: 'times-div-Web_Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Web_Regression_Suite">
               </div> <!-- times-div-Web_Regression_Suite -->
             </div> <!-- times-div -->
@@ -231,27 +222,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.backend.executor.TestRunner</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">startExecution(www.williams-sonoma.com basic flow)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">com.tests.BasicExecution</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">BasicFlow</span>
-                <span class="method-start">171487 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.backend.executor.TestRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">171788 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

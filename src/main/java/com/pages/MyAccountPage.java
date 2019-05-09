@@ -3,6 +3,7 @@ package com.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.backend.elements.CusWebElement;
 import com.backend.executor.TestBasePage;
 import com.backend.reports.Reporter;
 import com.backend.utils.ActionName;
@@ -11,23 +12,23 @@ import com.backend.utils.CommonUtils;
 public class MyAccountPage extends TestBasePage {
 
 	@FindBy(xpath = "//h1[contains(text(),'Hello')]")
-	private WebElement HelloText;
+	private CusWebElement HelloText;
 
 	@FindBy(xpath = "//a[@class='topnav-cookware ']")
-	private WebElement cookware;
+	private CusWebElement cookware;
 
 	@FindBy(xpath = "//li[1]//a[contains(text(),'Tea Kettles')]")
-	private WebElement teaKettle;
+	private CusWebElement teaKettle;
 
-	public WebElement getCookware() {
+	public CusWebElement getCookware() {
 		return cookware;
 	}
 
-	public WebElement getTeaKettle() {
+	public CusWebElement getTeaKettle() {
 		return teaKettle;
 	}
 
-	public WebElement getHelloText() {
+	public CusWebElement getHelloText() {
 		return HelloText;
 	}
 

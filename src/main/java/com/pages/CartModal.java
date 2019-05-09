@@ -1,8 +1,8 @@
 package com.pages;
 
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.backend.elements.CusWebElement;
 import com.backend.executor.TestBasePage;
 import com.backend.utils.ActionName;
 import com.backend.utils.CommonUtils;
@@ -14,9 +14,9 @@ public class CartModal extends TestBasePage {
 	}
 	
 	@FindBy(xpath="//a[@id='anchor-btn-checkout']")
-	private WebElement chkOutbtn;
+	private CusWebElement chkOutbtn;
 
-	public WebElement getChkOutbtn() {
+	public CusWebElement getChkOutbtn() {
 		return chkOutbtn;
 	}
 	

@@ -2,31 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Web Regression Suite" duration-ms="171898" started-at="2019-04-18T18:49:07Z" finished-at="2019-04-18T18:51:59Z">
+  <suite name="Web Regression Suite" duration-ms="106135" started-at="2019-04-19T16:13:37Z" finished-at="2019-04-19T16:15:23Z">
     <groups>
     </groups>
-    <test name="BDD Test Suite" duration-ms="171297" started-at="2019-04-18T18:49:07Z" finished-at="2019-04-18T18:51:58Z">
-      <class name="com.backend.executor.TestRunner">
-        <test-method status="PASS" signature="startExecution(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.backend.executor.TestRunner@3f56875e]" name="startExecution" duration-ms="167416" started-at="2019-04-19T00:19:08Z" data-provider="features" finished-at="2019-04-19T00:21:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[www.williams-sonoma.com basic flow]]>
-              </value>
-            </param>
-          </params>
+    <test name="Java Test Suite" duration-ms="106135" started-at="2019-04-19T16:13:37Z" finished-at="2019-04-19T16:15:23Z">
+      <class name="com.tests.BasicExecution">
+        <test-method status="PASS" signature="BasicFlow()[pri:0, instance:com.tests.BasicExecution@47c62251]" name="BasicFlow" duration-ms="102190" started-at="2019-04-19T21:43:38Z" description="A basic End to End Flow" finished-at="2019-04-19T21:45:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startExecution -->
-      </class> <!-- com.backend.executor.TestRunner -->
-    </test> <!-- BDD Test Suite -->
-    <test name="Java Test Suite" duration-ms="16" started-at="2019-04-18T18:51:59Z" finished-at="2019-04-18T18:51:59Z">
-      <class name="com.backend.executor.TestRunner">
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.backend.executor.TestRunner@3f56875e]" name="tearDown" is-config="true" duration-ms="85" started-at="2019-04-19T00:21:59Z" finished-at="2019-04-19T00:21:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.backend.executor.TestRunner -->
+        </test-method> <!-- BasicFlow -->
+      </class> <!-- com.tests.BasicExecution -->
     </test> <!-- Java Test Suite -->
   </suite> <!-- Web Regression Suite -->
 </testng-results>

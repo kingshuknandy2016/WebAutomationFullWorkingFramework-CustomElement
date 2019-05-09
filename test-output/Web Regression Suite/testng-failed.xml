@@ -3,14 +3,15 @@
 <suite thread-count="1" name="Failed suite [Web Regression Suite]" parallel="true">
   <listeners>
     <listener class-name="com.common.listners.TestNgListners"/>
+    <listener class-name="com.common.listners.AnnotationTransformer"/>
   </listeners>
   <test name="Java Test Suite(failed)" parallel="true" preserve-order="true">
     <classes>
-      <class name="com.common.tests.BasicExecution">
+      <class name="com.tests.BasicExecution">
         <methods>
-          <include name="Suite1"/>
+          <include name="BasicFlow"/>
         </methods>
-      </class> <!-- com.common.tests.BasicExecution -->
+      </class> <!-- com.tests.BasicExecution -->
     </classes>
   </test> <!-- Java Test Suite(failed) -->
 </suite> <!-- Failed suite [Web Regression Suite] -->
